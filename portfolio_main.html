@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Harsh Gupta</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        /*universal selector*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+         /**/
+        html,body{
+            width: 100%;
+            height: 100%;
+            /* background-color: rgb(223, 223, 48); */
+            scroll-behavior: smooth;
+        }
+         /**/
+        .wrapper{
+            width: 100%;
+            min-height: 10rem;
+            background: #ca2d2d;
+            display: flex;
+            flex-direction: column;
+        }
+        /*main nav tag*/
+        .nav{
+            width: 100%;
+            height: 5rem;
+            background-color: rgb(51, 49, 49);
+            position: fixed;
+            overflow: hidden;
+            top: 0;
+            
+            
+        }
+
+        /*logo*/
+        label.logo{
+            font-size: 30px;
+            color: white;
+            margin-top: 0;
+            margin-left: 100px;
+            line-height: 5rem;
+        }
+        /* navigation*/
+        nav ul {
+            float: right;
+            list-style-type: none;
+
+        }
+
+        nav ul li{
+            display: inline-block;
+            line-height: 5rem;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            text-transform: capitalize;
+            padding: 8px 20px;
+            /* background-color: #f3192e; */
+            border-radius: 0.3rem;
+        }
+
+        nav ul li a.active, a:hover{
+            background-color: white;
+            color: black;
+        }
+
+        .home{
+            width: 100%;
+            height: 38rem;
+            background-color: black;
+            /* margin-top: 1rem; */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-bottom: 0.1rem solid white;
+            
+            
+          
+        }
+
+        h1{
+            font-size: 5rem;
+            font-family: 'Lobster', cursive;
+        }
+
+        .btn{
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+
+        }
+
+        .button1{
+            background-color: rgb(20, 20, 20);
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .button2{
+           
+            background-color: rgb(20, 20, 20);
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+
+
+       
+        .about{
+            width: 100%;
+            height: 38rem;
+            background-color: black;
+            /* margin-top: 1rem; */
+            color: white;
+            border-bottom: 0.1rem solid white;
+        }
+
+        .about-me-heading{
+            width: 100%;
+            height: 20%;
+            /* background-color: pink; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+
+        }
+
+        .about-me-description{
+            width: 100%;
+            height: 80%;
+            /* background-color: rgb(235, 34, 67); */
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            text-align: justify;
+            font-size: 1rem;
+        }
+
+        
+        .services{
+            width: 100%;
+            height: 38rem;
+            background-color: black;
+            /* margin-top: 1rem; */
+            color: white;
+            border-bottom: 0.1rem solid white;
+        }
+
+        .our-services{
+            width: 100%;
+            height: 20%;
+            /* background-color: pink; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+
+        }
+
+        .services-items{
+            width: 100%;
+            height: 80%;
+            /* background-color: floralwhite; */
+            display: flex;
+            justify-content: space-evenly;
+           
+        }
+
+        .web-development{
+            width: 30%;
+            height: 80%;
+            border: 0.1rem solid white;
+            border-radius: 2rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s ease-in;
+
+        }
+
+        .web-development:hover{
+            background-color: rgb(20, 20, 20);
+            font-size: 2rem;
+        }
+
+        .uiux-design{
+            
+            width: 30%;
+            height: 80%;
+            border: 0.1rem solid white;
+            border-radius: 2rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s ease-in;
+
+        }
+
+        .uiux-design:hover{
+            background-color: rgb(20, 20, 20);
+            font-size: 2rem;
+        }
+
+
+
+        .contacts{
+            width: 100%;
+            height: 38rem;
+            background-color: black;
+            /* margin-top: 1rem; */
+            color: white;
+        }
+
+        .connect{
+            width: 100%;
+            height: 20%;
+            /* background-color: pink; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+ 
+        }
+
+        .social-media-links{
+            width: 100%;
+            height: 70%;
+            /* background-color: #ca2d2d; */
+            display: flex;
+            flex-direction: column;
+            font-size: 3rem;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .mail-link{
+            font-size: 1rem;
+            color: rgb(199, 197, 197);
+            margin-top: 1rem;
+            font-weight: bolder;
+        }
+
+
+
+        .social-media-links a{
+            text-decoration: none;
+            
+        }
+
+
+        .social-media-links a:hover{
+            background: none;
+        }
+
+        .facebook, .twitter, .instagram, .linkedin, .google-mail{
+            color: white;
+        }
+
+        .social-media-links a .facebook:hover{
+            color: blue;
+        }
+
+        .social-media-links a .twitter:hover{
+            color: skyblue;
+        }
+
+        .social-media-links a .instagram:hover{
+            color: hotpink;
+        }
+
+        
+        .social-media-links a .linkedin:hover{
+            color: rgb(39, 29, 189);
+        }
+
+        .social-media-links a .google-mail:hover{
+            color: rgb(189, 29, 37);
+        }
+
+        .copyright
+        {
+            width: 100%;
+            height: 10%;
+            background-color: crimson;
+            font-size: 1rem;
+            color: rgb(199, 197, 197);
+            font-family: 'Lobster', cursive;
+            font-weight: lighter;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 10px;
+        }
+
+
+      
+
+        
+
+        
+       
+       
+
+
+        
+        
+
+        
+       
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+        <nav>
+            <label class="logo">HARSH GUPTA</label>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="home" id="home">
+            <h1>Welcome to my Portfolio</h1>
+        <div class="btn">
+            <a href="#contacts" class="button1">Connect With Me</a>
+            <a href="#" class="button2">Download CV</a>
+        </div>   
+        </div>
+        <div class="about" id="about">
+            <div class="about-me-heading">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-me-description">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt odit maxime ut harum delectus inventore totam optio voluptatem ad reprehenderit! Sunt a, ipsam aut maxime velit saepe debitis fuga fugit dolor voluptatem. Pariatur, quibusdam tempora dolor maiores autem magnam harum inventore laudantium odit similique praesentium architecto! Reiciendis exercitationem possimus vitae aspernatur nihil dicta totam recusandae neque optio, nulla, nesciunt consectetur repudiandae ad! Suscipit ea, consectetur laudantium illo pariatur debitis vitae est assumenda? Eius, nulla. Debitis voluptatum fugit temporibus fuga dolorum animi harum, quis repellendus asperiores ipsa porro atque officiis officia modi, error, ipsam dolores nesciunt minus esse architecto libero veniam aspernatur placeat quae? Blanditiis, maxime? Assumenda quaerat consequatur, quidem perspiciatis corrupti delectus quam ex voluptatum? Consequatur, reiciendis accusantium quo dolor veritatis optio placeat. Fuga unde incidunt ipsam quo in nesciunt neque at exercitationem id nemo eius facere obcaecati, cum ex architecto cumque molestias! Fugiat accusamus enim quia qui dignissimos eos id dolor impedit, minima sapiente, eveniet, dolore esse? At laborum, quas ullam enim eligendi et commodi natus aliquid? Vitae, obcaecati! Corporis quos cupiditate vero excepturi ad nobis rerum culpa, impedit temporibus. Deleniti, harum eveniet rerum similique sed aut. Nisi incidunt modi assumenda esse. Vitae cum nostrum commodi qui provident unde officiis delectus ab inventore ad perspiciatis corrupti dolorem quod quisquam, dolore libero? Assumenda officiis inventore nesciunt autem quis quia quaerat iste amet itaque, fuga veniam nisi, commodi aspernatur nihil soluta vitae! Beatae aliquid deserunt deleniti? Natus veritatis sit ipsa, itaque perferendis aut doloribus quia eum vero asperiores sequi, deserunt, quae ducimus laborum possimus necessitatibus voluptatum corrupti. Numquam quae voluptatibus veritatis voluptatum dolorem commodi quas fugiat deserunt earum laboriosam. Vel molestias asperiores sapiente consectetur neque quam soluta, nihil ullam consequuntur illum accusantium nisi, est provident sit tempore. Eos impedit cum ut quos repellat perferendis quaerat, recusandae quis. Facilis sequi a dolorum nihil veritatis accusamus tenetur eum, iusto perspiciatis repellendus repellat corporis vitae aspernatur doloribus voluptatum vel sapiente. Hic molestiae, quam quaerat unde vitae fuga earum aliquam nobis praesentium maxime aut quas accusamus ullam, quos consequuntur quae corrupti deserunt! Nemo laborum nihil quis commodi sit! Modi debitis eos aut earum laborum, consectetur architecto nobis distinctio obcaecati perspiciatis at minima voluptates ab dignissimos! Quibusdam, nulla! Quia, omnis dicta quas maxime consequatur quos impedit, obcaecati eos quis vero molestias consectetur perspiciatis ducimus molestiae beatae minima debitis saepe animi ipsum, eius facere. Inventore rem totam, quibusdam est praesentium, minima hic, iusto possimus beatae dolorum quidem.Hic molestiae, quam quaerat unde vitae fuga earum aliquam nobis praesentium maxime aut quas accusamus ullam, quos consequuntur quae corrupti deserunt! Nemo laborum nihil quis commodi sit! Modi debitis eos aut earum laborum, consectetur architecto nobis distinctio obcaecati perspiciatis at minima voluptates ab dignissimos! Quibusdam, nulla! Quia, omnis dicta quas maxime consequatur quos impedit, obcaecati eos quis vero molestias consectetur perspiciatis ducimus molestiae beatae minima debitis saepe animi ipsum, eius facere. Inventore rem totam, quibusdam est praesentium, minima hic, iusto possimus beatae dolorum quidem.Hic molestiae, quam quaerat unde vitae fuga earum aliquam nobis praesentium maxime aut quas accusamus ullam, quos consequuntur quae corrupti deserunt! Nemo laborum nihil quis commodi sit! Modi debitis eos aut earum laborum, consectetur architecto nobis distinctio obcaecati perspiciatis at minima voluptates ab dignissimos! Quibusdam, nulla! Quia, omnis dicta quas maxime consequatur quos impedit, obcaecati eos quis vero molestias consectetur perspiciatis ducimus molestiae beatae minima debitis saepe animi ipsum, eius facere. Inventore rem totam, quibusdam est praesentium, minima hic, iusto possimus beatae dolorum quidem.dicta quas maxime consequatur quos impedit, obcaecati eos quis vero molestias consectetur perspiciatis ducimus molestiae beatae minima debitis saepe animi ipsum, eius facere. Inventore rem totam, quibusdam est praesentium, minima hic, iusto possimus beatae dolorum quidem.</p>
+            </div>
+        </div>
+        <div class="services" id="services">
+          <div class="our-services"><h2>Our Services</h2></div>
+        <div class="services-items">
+            <div class="web-development">Web Development</div>
+            <div class="uiux-design">UI/UX Design</div>
+        </div>
+        </div>
+        <div class="contacts" id="contacts">
+            <div class="connect">
+                <h2>Connect With Me:</h2>
+            </div>
+
+            <div class="social-media-links">
+                <a href="#"><i class="ri-facebook-line facebook"></i></a>
+                <a href="#"><i class="ri-twitter-line twitter"></i></a>
+                <a href="#"><i class="ri-instagram-line instagram"></i></a>
+                <a href="#"><i class="ri-linkedin-line linkedin"></i></a>
+                <p class="mail-link">Write Us At:</p><a href="#"><i class="ri-mail-line google-mail"></i></a>
+                
+            </div>
+            <div class="copyright"><i class="ri-copyright-line"></i>Harsh Gupta,2023</div>
+        </div>
+    </div>
+</body>
+</html>
